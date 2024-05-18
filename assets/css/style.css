@@ -7,8 +7,10 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-body > * {
+
+html, body {
   overflow-x: hidden;
+  position: relative;
 }
 
 .premium-title {
