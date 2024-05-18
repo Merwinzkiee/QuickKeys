@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+.premium-title {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .premium-title {
+    font-size: 4rem;
+  }
+  .car-container-second img {
+   display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .premium-title {
+    font-size: 5rem;
+  }
+
+  .car-container-second img {
+   /* display: none !important; */
+  }
+}
+
+.second-page {
+  margin-top: 140px;
+}
+
+.sub-sentence {
+  font-size: 13px;
+}
+
+.car-container-first img {
+  overflow: hidden;
+  width: 20rem;
+  height: 10rem;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.car-container-second img {
+  width: 13rem;
+  height: 8rem;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.car-logos img {
+  height: 6rem;
+  width: 6rem;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.view-all {
+  font-size: 10px;
+}
+
+.car-container-first img:hover {
+  transform: scale(1.05);
+}
+
+.car-container-second img:hover {
+  transform: scale(1.05);
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+#back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+#back-to-top-btn:hover {
+  background-color: #555555;
+}
