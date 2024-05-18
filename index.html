@@ -58,7 +58,7 @@
                         vehicles to suit every need and budget. Whether it's a weekend getaway, business trip, or daily
                         commute, QuickKeys has you covered.
                     </p>
-                    <button class="btn btn-dark rounded-3 px-4">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn-dark rounded-3 px-4" onclick="explore()">Explore <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
             <div class="col-md-6 mt-5">
@@ -280,14 +280,19 @@
             }
         });
 
-        document.getElementById('back-to-top-btn').addEventListener('click', function () {
+        document.getElementById('back-to-top-btn').addEventListener('calick', function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
         });
 
+         function explore() {
+            var carsSection = document.getElementById('cars');
+            carsSection.scrollIntoView({ behavior: 'smooth' });
 
+            console.log("Functional explore called");
+        }
 
     </script>
 </body>
